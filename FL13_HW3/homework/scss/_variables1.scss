@@ -1,0 +1,44 @@
+$contentBackground: #fff;
+$backgroundImage: url(../img/m-h-day.jpg) no-repeat;
+$backgroundP:#0ca1c8;
+$backgroundCardFooter:#1c1e2a;
+$linearGradient:linear-gradient(45deg, #669702, #295ad8);
+
+$fontP:#303030;
+$fontfamilyHead: "Tool Bold",sans-serif;
+$fontfamilyMain: "Fiendstar SemiBold",sans-serif;
+$fontfamilyP: system-ui;
+$fontButton:"Sultan Nahia Regular",sans-serif;
+
+$fontWeights: ( "high": 700, "upper-medium": 600, "medium": 500,"pre-medium":400,"light":300);
+
+$buttonBackground:#7ab11d;
+$buttonBorder:0px none #7ab11d;
+
+
+$colorText:  #d8d7d7;
+
+%p-logo-shared{
+    font-family: $fontfamilyP;
+    font-weight: map-get($fontWeights,"high");
+    font-size: 23px;
+    margin-left: 8px;
+    margin-bottom: 45px;
+    padding-bottom: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 40px;
+    line-height: 1.4;
+}
+       
+%span-logo-shared{
+
+    display: inline-block;
+    vertical-align: top;
+    width:68px;
+    margin-bottom: -10px;
+    font-family: $fontfamilyP;
+    font-size: 10px;
+    font-weight: map-get($fontWeights,"medium");
+}

@@ -1,0 +1,43 @@
+$contentBackground: #1b1e2a;
+$backgroundImage: url(../img/m-h-night.jpg) no-repeat;
+$backgroundP:#ff4d30;
+$backgroundCardFooter:#383d4f;
+$linearGradient:linear-gradient(45deg, #e0a800, #602440);
+
+$fontP:#fff;
+$fontfamilyHead: "Tool Bold",sans-serif;
+$fontfamilyMain: "Fiendstar SemiBold",sans-serif;
+$fontfamilyP: "Ambigue Pro Medium",sans-serif;
+$fontButton:"Sultan Nahia Regular",sans-serif;
+
+$fontWeights: ( "high": 700, "upper-medium": 600, "medium": 500,"pre-medium":400,"light":300);
+
+$buttonBackground:#e4ae00;
+$buttonBorder:0px none #e4ae00;
+
+$colorText:  #bfbfbf;
+
+%p-logo-shared{
+    font-family: $fontfamilyP;
+    font-weight: map-get($fontWeights,"high");
+    font-size: 23px;
+    margin-left: 8px;
+    margin-bottom: 45px;
+    padding-bottom: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 40px;
+    line-height: 1.4;
+}
+       
+%span-logo-shared{
+
+    display: inline-block;
+    vertical-align: top;
+    width:68px;
+    margin-bottom: -10px;
+    font-family: $fontfamilyP;
+    font-size: 10px;
+    font-weight: map-get($fontWeights,"medium");
+}
