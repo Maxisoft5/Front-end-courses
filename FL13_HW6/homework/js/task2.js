@@ -3,8 +3,6 @@
   while (x) {
   let inputWord = prompt('Enter a word', '');
 
-  inputWord = inputWord.replace(/\s/g, '');
-   
   console.log(inputWord);
   
   if ( inputWord === '' || inputWord === ' ') {
