@@ -10,18 +10,12 @@ function convert(){
     return convertedArray;
 }
 function executeforEach(args = [], multiplies){
-    multiplies = function name(el){
-    return el * 2;
-    };
     for(let arg = 0; arg < args.length; arg++){
     args[arg] = multiplies(args[arg]);
     }
         return args;
     }
 function mapArray(args = [], addition){
-    addition = function name(el){
-    return el + 3;  
-    };
     for(let arg = 0; arg < args.length; arg++){
         if(args[arg] === String(args[arg])){
             args[arg] -=0;
