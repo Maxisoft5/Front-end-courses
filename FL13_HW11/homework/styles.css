@@ -1,15 +1,38 @@
-/* TODO: your styles goes here*/
-li{
-    position: relative;
+body{
+	margin: 0;
+	padding: 0;
 }
-ul:hover::after{
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1.75em;
-    background:rgb(189, 212, 231);
-    z-index: -1;
-    position: absolute;
-    top:0;
-    left:0;
+ul{
+	list-style: none;
+	cursor: pointer;
+}
+li{
+	padding: 0.3em;
+}
+.material-icons{
+	vertical-align: sub;
+}
+.folder{
+	color: rgba(45, 76, 212, 0.61);
+}
+.file{
+	color: rgb(34, 34, 34);
+}
+ul>li>*{
+	display: none;
+}
+.context-menu{
+	border: 1px solid grey;
+	background-color: lightgrey;
+	position: absolute;
+	color: black;
+	padding: 0;
+}
+.context-menu li:hover{
+	background-color: grey;
+}
+input{
+	box-sizing: border-box;
+	border: 0.5px solid lightblue;
+	height: 25px;
 }
