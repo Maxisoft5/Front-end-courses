@@ -1,0 +1,16 @@
+.column {
+  float: left;
+  width: 50%;
+  }
+  /* Clear floats after the columns */
+.root:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  .inputs{
+    width: 200px;
+  }
+  input{
+    margin-top: 20px;
+  }
