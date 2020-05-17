@@ -1,1 +1,1 @@
-
+let inputArray2 = [];
