@@ -74,8 +74,9 @@ function FrontEndLab(failedHomeworkLimit, studentsList){
     }
 }
 
+const failedLimitHW = 4;
 const student1 = new Student('Max','john@gmail.com');
-const lab = new FrontEndLab(4 ,listOfStudents);
+const lab = new FrontEndLab(failedLimitHW ,listOfStudents);
 
 student1.getName();
 student1.getEmail();
