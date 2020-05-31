@@ -1,0 +1,11 @@
+div.table{
+	padding: 5px;
+	margin-top: 12px;
+}
+.table> div> button{
+	width: 70px;
+}
+.label{
+	width: 90px;
+	display: inline-block;
+}
