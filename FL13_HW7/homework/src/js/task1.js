@@ -1,29 +1,34 @@
-// Your code goes here
-let currentHours = new Date().getHours()
-let login = prompt('Enter your login','');
-
-if (login === null){ 
-    alert('Canceled');
-} else if (login.length < 4){ 
-    alert("I don't know any users having name length less than 4 symbols");
-} else if (login === 'User' || login === 'Admin'){
-    let password = prompt('Enter your passwrod','');
-     
-    if (login === 'User' && password === 'UserPass'){
-        if (currentHours < 20 && currentHours >= 8){
-       alert('Good day, dear User!');
-        } else if (currentHours >= 20 || currentHours <8){
-            alert('Good evening, dear User!')
-        }
-    } else if(login === 'Admin' && password === 'RootPass'){
-        if(currentHours < 20 && currentHours > 4){
-        alert('Good day, dear Admin!');
-     } else if (currentHours >= 20 || currentHours <=3){
-            alert('Good evening, dear Admin!')
-        }
-    } else {
-        alert('Wrong Password');
-    }
-} else {
-    alert("I don't know you");
+const users = {
+	User: 'UserPass',
+	Admin: 'RootPass'
 }
+let login;
+let pass;
+do{
+	login = prompt('Enter your login: ', '');
+	if(!login){
+		alert('Canceled.');
+	} else if(login.length < 4){
+		alert("I don't know any users having name length less than 4 symbols");
+	} else if(!users.hasOwnProperty(login)){
+		alert('I don’t know you');
+	} else{
+		do{
+			pass = prompt('Enter your password: ', '');
+			if(users[login] !== pass){
+				alert('Wrong password!');
+			} else if(!pass){
+				alert('Canceled.');
+			} else{
+				let curHours = new Date().getHours();
+				if(curHours >=8 && curHours < 20){
+					alert(`Good day, dear ${login}!`);
+				} else{
+					alert(`Good evening, dear ${login}`);
+				}
+			}
+		}
+		while(users[login] !== pass)
+	}
+}
+while(!users.hasOwnProperty(login))
